@@ -18,4 +18,4 @@ Serve como base pra entender bem como funcionam estruturas como `while`, `if`, `
 ---
 
 ## 📷 Exemplo no terminal
-    ...
+    
