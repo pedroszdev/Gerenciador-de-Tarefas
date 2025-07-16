@@ -1,4 +1,7 @@
 # Gerenciador de Tarefas
+from time import sleep
+from os import system
+
 def menu():
     print('===== MENU =====')
     print('1. Adicionar tarefas')
@@ -41,17 +44,25 @@ def remover_tarefa():
         lista_tarefas.pop(resp-1)
 
 lista_tarefas=[]
+
 while True:
     menu()
+    print()
     escolha=input('Escolha: ')
+    system('cls')
+    print()
     if escolha=='1':
         adicionar_tarefa()
+        sleep(0.5)
     elif escolha=='2':
         listar_tarefas()
+        sleep(0.5)
     elif escolha=='3':
         concluir_tarefa()
+        sleep(0.5)
     elif escolha=='4':
         remover_tarefa()
+        sleep(0.5)
     elif escolha=='5':
         break
     else:
